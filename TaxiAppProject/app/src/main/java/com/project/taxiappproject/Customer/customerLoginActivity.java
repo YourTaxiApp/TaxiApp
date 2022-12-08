@@ -73,7 +73,7 @@ public class customerLoginActivity extends AppCompatActivity implements View.OnC
                                     } else {
                                         String userId = mAuth.getCurrentUser().getUid();
                                         DatabaseReference currentUserDb = FirebaseDatabase.getInstance()
-                                                .getReference().child("Users").child("Drivers").child(userId);
+                                                .getReference().child("Users").child("Customers").child(userId);
                                         currentUserDb.setValue(true);
                                     }
                                 }

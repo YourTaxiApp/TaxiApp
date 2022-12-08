@@ -20,7 +20,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:value= "AIzaSyB3pjaM9Zu7JUVw7qwvjEJ8Xt9ffK1RIGw" />
 
         <activity
             android:name=".Driver.driverMapActivity"
@@ -28,13 +28,6 @@
             android:label="@string/title_activity_driver_map" />
         <activity
             android:name=".Customer.customerLoginActivity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Driver.driverLoginActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -43,6 +36,14 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Driver.driverLoginActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
         </activity>
     </application>
 
