@@ -31,20 +31,21 @@ public class customerLoginActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
-        //set buttons and textedits
+        //set buttons and textEdits
         mEmail = (EditText) findViewById(R.id.email);
         mPassword = (EditText) findViewById(R.id.password);
         mLogin = (Button) findViewById(R.id.login);
         mRegister = (Button) findViewById(R.id.register);
         mLogin.setOnClickListener(this);
         mRegister.setOnClickListener(this);
+
         mAuth = FirebaseAuth.getInstance();
         authStateListener =  new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if(user != null){
-                    Intent intent = new Intent(customerLoginActivity.this, driverMapActivity.class);
+                    Intent intent = new Intent(customerLoginActivity.this, customerMapActivity.class);
                     startActivity(intent);
                     finish();
                 }

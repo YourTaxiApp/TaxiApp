@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TaxiAppProject</string>
     <string name="title_activity_driver_map">driverMapActivity</string>
+    <string name="title_activity_customer_map">customerMapActivity</string>
+    <string name="logout">Logout</string>
+    <string name="find_driver">FIND DRIVER</string>
 </resources>
