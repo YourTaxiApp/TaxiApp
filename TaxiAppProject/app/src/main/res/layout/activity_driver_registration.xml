@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customer.CustomerLoginActivity"
+    tools:context=".driver.DriverRegistrationActivity"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp">
@@ -12,17 +12,41 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:id="@+id/customerName"
+        android:inputType="text"
+        android:autofillHints="name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/email"
         android:id="@+id/email"
         android:inputType="textEmailAddress"
-        android:autofillHints="emailAddress" />
+        android:autofillHints="emailAddress"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
         android:id="@+id/password"
         android:inputType="textPassword"
-        android:autofillHints="password" />
+        android:autofillHints="password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:id="@+id/phoneNumber"
+        android:inputType="phone"
+        android:autofillHints="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/car_model"
+        android:id="@+id/car"
+        android:inputType="text"
+        android:autofillHints="text"/>
 
     <Space
         android:layout_width="match_parent"
@@ -31,20 +55,15 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:id="@+id/login"
+        android:text="@string/signup"
+        android:id="@+id/register"
         android:textSize="20sp"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"
-        android:id="@+id/register"
-        android:textSize="15sp"
-        android:background="@null"/>
+        android:text="@string/back"
+        android:id="@+id/back"
+        android:textSize="20sp"/>
 
 </LinearLayout>

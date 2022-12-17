@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.project.taxiappproject"
-        minSdk 26
+        minSdk 25
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -45,9 +45,16 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.firebase:geofire-android:3.2.0'
     implementation 'com.firebase:geofire-android-common:3.2.0'
+    implementation 'com.google.maps.android:android-maps-utils:2.4.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.libraries.places:places:3.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 }
 
+apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'

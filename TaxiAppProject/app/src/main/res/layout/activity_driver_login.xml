@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Driver.driverLoginActivity"
+    tools:context=".driver.DriverLoginActivity"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp">
@@ -12,26 +12,39 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email"
         android:id="@+id/email"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
         android:id="@+id/password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:autofillHints="password"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:id="@+id/login"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="register"
-        android:id="@+id/register"/>
+        android:text="@string/become_our_partner"
+        android:id="@+id/register"
+        android:textSize="15sp"
+        android:background="@null"/>
 
 </LinearLayout>
